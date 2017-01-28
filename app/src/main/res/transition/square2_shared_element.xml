@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<transitionSet xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:targetApi="lollipop">
+
+    <autoTransition>
+        <targets>
+            <target android:targetName="android:status:background" />
+            <target android:targetName="android:navigation:background" />
+        </targets>
+    </autoTransition>
+
+    <transitionSet>
+        <targets>
+            <target android:targetName="@string/custom_element_transition_name" />
+        </targets>
+        <changeBounds />
+        <arcMotion />
+    </transitionSet>
+
+</transitionSet>

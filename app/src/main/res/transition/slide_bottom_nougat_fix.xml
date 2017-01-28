@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<slide xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:duration="1000"
+    android:slideEdge="bottom"
+    tools:targetApi="lollipop">
+
+    <targets>
+        <target android:excludeId="@id/action_bar_container" />
+    </targets>
+
+</slide>

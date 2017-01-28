@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<transitionSet xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:transitionOrdering="together"
+    tools:targetApi="kitkat">
+    <changeBounds />
+    <fade android:fadingMode="fade_out">
+        <targets>
+            <target android:targetId="@id/transition_square" />
+        </targets>
+    </fade>
+</transitionSet>

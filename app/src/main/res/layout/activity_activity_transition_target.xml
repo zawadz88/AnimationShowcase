@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityTransitionActivity"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <View
+        android:id="@+id/square1"
+        android:layout_width="@dimen/square_size_expanded"
+        android:layout_height="@dimen/square_size_expanded"
+        android:background="#990000"
+        android:layout_marginBottom="16dp"/>
+
+    <View
+        android:id="@+id/square2"
+        android:layout_width="@dimen/square_size_expanded"
+        android:layout_height="@dimen/square_size_expanded"
+        android:background="#009900"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"/>
+
+    <View
+        android:id="@+id/square3"
+        android:layout_width="@dimen/square_size_expanded"
+        android:layout_height="@dimen/square_size_expanded"
+        android:background="#000099"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="16dp"/>
+
+</RelativeLayout>

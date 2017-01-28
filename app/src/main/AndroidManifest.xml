@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.github.zawadz88.animation.showcase">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".AnimationActivity" />
+
+        <activity android:name=".DrawableAnimationActivity" />
+
+        <activity android:name=".WindowAnimationsActivity" />
+
+        <activity android:name=".ObjectAnimatorActivity" />
+
+        <activity android:name=".ViewPropertyAnimatorActivity" />
+
+        <activity android:name=".DefaultLayoutAnimationsActivity" />
+
+        <activity android:name=".CustomLayoutAnimationsActivity" />
+
+        <activity android:name=".TransitionActivity" />
+
+        <activity android:name=".SupportTransitionActivity" />
+
+        <activity
+            android:name=".ActivityTransitionActivity"
+            android:theme="@style/AppTheme.ActivityTransitions.Source" />
+
+        <activity
+            android:name=".ActivityTransitionTargetActivity"
+            android:theme="@style/AppTheme.ActivityTransitions.Target" />
+
+        <activity
+            android:name=".ActivityTransitionNougatFixActivity"
+            android:theme="@style/AppTheme.ActivityTransitions.SourceNougatFix" />
+
+        <activity
+            android:name=".ActivityTransitionNougatFixTargetActivity"
+            android:theme="@style/AppTheme.ActivityTransitions.TargetNougatFix" />
+
+        <activity
+            android:name=".ActivitySharedElementTransitionActivity"
+            android:theme="@style/AppTheme.ActivityTransitions.SourceNougatFix.SharedElement" />
+
+        <activity
+            android:name=".ActivitySharedElementTransitionTargetActivity"
+            android:theme="@style/AppTheme.ActivityTransitions.TargetNougatFix.SharedElement" />
+
+        <activity android:name=".FragmentSharedElementTransitionActivity" />
+
+        <activity android:name=".RevealActivity" />
+
+        <activity android:name=".AnimatedVectorDrawableActivity" />
+
+        <activity android:name=".AnimatedSelectorActivity" />
+
+        <activity android:name=".StateListAnimatorActivity" />
+
+        <activity android:name=".RecyclerViewAnimationActivity" />
+
+    </application>
+
+</manifest>

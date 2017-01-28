@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:enterFadeDuration="@android:integer/config_mediumAnimTime"
+    android:exitFadeDuration="@android:integer/config_mediumAnimTime">
+
+    <item
+        android:id="@+id/expanded"
+        android:drawable="@drawable/vd_checkable_expandcollapse_expanded"
+        android:state_checked="true" />
+
+    <item
+        android:id="@+id/collapsed"
+        android:drawable="@drawable/vd_checkable_expandcollapse_collapsed" />
+
+</selector>

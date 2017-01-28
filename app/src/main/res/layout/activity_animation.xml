@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.github.zawadz88.animation.showcase.AnimationActivity">
+
+    <Button
+        android:id="@+id/single_rotation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Single" />
+
+    <Button
+        android:id="@+id/infinite_rotation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/single_rotation"
+        android:text="Infinite" />
+
+    <Button
+        android:id="@+id/fade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/infinite_rotation"
+        android:text="Fade and move" />
+
+    <Button
+        android:id="@+id/scale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/single_rotation"
+        android:text="Scale" />
+
+
+    <ImageView
+        android:id="@+id/star_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/abc_ic_star_black_36dp" />
+
+</RelativeLayout>

@@ -1,0 +1,54 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.ActivityTransitions" tools:targetApi="lollipop">
+        <!-- enable window content transitions -->
+        <item name="android:windowContentTransitions">true</item>
+    </style>
+
+    <style name="AppTheme.ActivityTransitions.Source" tools:targetApi="lollipop">
+
+        <!-- specify enter and exit transitions -->
+        <item name="android:windowReenterTransition">@transition/explode</item>
+        <item name="android:windowExitTransition">@transition/explode</item>
+        <item name="android:windowAllowReturnTransitionOverlap">false</item>
+    </style>
+
+    <style name="AppTheme.ActivityTransitions.SourceNougatFix" tools:targetApi="lollipop">
+
+        <!-- specify enter and exit transitions -->
+        <item name="android:windowReenterTransition">@transition/explode_nougat_fix</item>
+        <item name="android:windowExitTransition">@transition/explode_nougat_fix</item>
+        <item name="android:windowAllowReturnTransitionOverlap">false</item>
+    </style>
+
+    <style name="AppTheme.ActivityTransitions.Target" tools:targetApi="lollipop">
+        <item name="android:windowAnimationStyle">@null</item>
+        <!-- specify enter and exit transitions -->
+        <item name="android:windowEnterTransition">@transition/slide_bottom</item>
+        <item name="android:windowReturnTransition">@transition/slide_top_and_fade</item>
+    </style>
+
+    <style name="AppTheme.ActivityTransitions.TargetNougatFix" tools:targetApi="lollipop">
+        <item name="android:windowAnimationStyle">@null</item>
+        <!-- specify enter and exit transitions -->
+        <item name="android:windowEnterTransition">@transition/slide_bottom_nougat_fix</item>
+        <item name="android:windowReturnTransition">@transition/slide_top_and_fade_nougat_fix</item>
+    </style>
+
+    <style name="AppTheme.ActivityTransitions.SourceNougatFix.SharedElement" tools:targetApi="lollipop">
+        <item name="android:windowAllowReturnTransitionOverlap">true</item>
+    </style>
+
+    <style name="AppTheme.ActivityTransitions.TargetNougatFix.SharedElement" tools:targetApi="lollipop">
+        <item name="android:windowSharedElementEnterTransition">@transition/square2_shared_element</item>
+    </style>
+
+</resources>

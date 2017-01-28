@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <item name="fast_out_slow_in" type="interpolator" tools:ignore="ReferenceType">@android:anim/accelerate_decelerate_interpolator</item>
+    <item name="path" type="interpolator" tools:ignore="ReferenceType">@android:anim/accelerate_decelerate_interpolator</item>
+
+</resources>

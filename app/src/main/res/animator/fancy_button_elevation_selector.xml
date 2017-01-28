@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <set>
+            <objectAnimator
+                android:duration="@android:integer/config_shortAnimTime"
+                android:propertyName="elevation"
+                android:valueTo="16dp" />
+
+            <objectAnimator
+                android:duration="@android:integer/config_shortAnimTime"
+                android:propertyName="rotation"
+                android:valueTo="180" />
+        </set>
+    </item>
+    <item>
+        <set>
+            <objectAnimator
+                android:duration="@android:integer/config_shortAnimTime"
+                android:propertyName="elevation"
+                android:valueTo="4dp" />
+
+            <objectAnimator
+                android:duration="@android:integer/config_shortAnimTime"
+                android:propertyName="rotation"
+                android:valueTo="0" />
+        </set>
+    </item>
+</selector>

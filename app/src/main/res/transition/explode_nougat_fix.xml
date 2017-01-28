@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<explode xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:targetApi="lollipop">
+
+    <targets>
+        <target android:excludeId="@id/action_bar_container" />
+    </targets>
+
+</explode>

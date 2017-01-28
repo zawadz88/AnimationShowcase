@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?><!-- Source: https://github.com/alexjlockwood/adp-delightful-details -->
+<animated-selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/expanded"
+        android:state_checked="true">
+        <bitmap
+            android:gravity="center"
+            android:src="@drawable/abc_ic_star_black_48dp" />
+    </item>
+
+    <item android:id="@+id/collapsed">
+        <bitmap
+            android:gravity="center"
+            android:src="@drawable/abc_ic_star_black_16dp" />
+    </item>
+
+    <transition
+        android:fromId="@id/expanded"
+        android:reversible="true"
+        android:toId="@id/collapsed">
+        <animation-list>
+            <item android:duration="100">
+                <bitmap
+                    android:gravity="center"
+                    android:src="@drawable/abc_ic_star_black_48dp" />
+            </item>
+            <item android:duration="100">
+                <bitmap
+                    android:gravity="center"
+                    android:src="@drawable/abc_ic_star_black_36dp" />
+            </item>
+            <item android:duration="100">
+                <bitmap
+                    android:gravity="center"
+                    android:src="@drawable/abc_ic_star_black_16dp" />
+            </item>
+        </animation-list>
+    </transition>
+
+
+</animated-selector>

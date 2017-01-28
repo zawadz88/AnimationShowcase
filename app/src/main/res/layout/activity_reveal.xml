@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.github.zawadz88.animation.showcase.AnimationActivity">
+
+    <Button
+        android:id="@+id/reveal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reveal!" />
+
+
+    <LinearLayout
+        android:id="@+id/revealContainer"
+        android:layout_width="match_parent"
+        android:layout_height="96dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_centerVertical="true"
+        android:background="?attr/colorPrimary"
+        android:visibility="invisible"
+        tools:visibility="visible">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="16dp"
+            app:srcCompat="@drawable/abc_ic_star_black_16dp"
+            android:tint="?attr/colorAccent"/>
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="16dp"
+            app:srcCompat="@drawable/abc_ic_clear_material"
+            android:tint="?attr/colorAccent" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="16dp"
+            app:srcCompat="@drawable/abc_ic_voice_search_api_material"
+            android:tint="?attr/colorAccent" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="16dp"
+            app:srcCompat="@drawable/abc_ic_menu_overflow_material"
+            android:tint="?attr/colorAccent" />
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="16dp"
+            app:srcCompat="@drawable/abc_ic_star_black_16dp"
+            android:tint="?attr/colorAccent"/>
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="16dp"
+            app:srcCompat="@drawable/abc_ic_clear_material"
+            android:tint="?attr/colorAccent" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="16dp"
+            app:srcCompat="@drawable/abc_ic_voice_search_api_material"
+            android:tint="?attr/colorAccent" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="16dp"
+            app:srcCompat="@drawable/abc_ic_menu_overflow_material"
+            android:tint="?attr/colorAccent" />
+
+    </LinearLayout>
+
+</RelativeLayout>

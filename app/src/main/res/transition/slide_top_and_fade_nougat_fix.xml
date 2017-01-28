@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<transitionSet xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:targetApi="lollipop"
+    android:duration="1000"
+    android:transitionOrdering="together">
+
+    <targets>
+        <target android:excludeId="@id/action_bar_container" />
+    </targets>
+
+    <fade android:fadingMode="fade_out" />
+
+    <slide android:slideEdge="top" />
+
+</transitionSet>

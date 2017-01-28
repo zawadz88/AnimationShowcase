@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".ActivityTransitionActivity">
+
+    <View
+        android:id="@+id/square1"
+        android:layout_width="@dimen/square_size_expanded"
+        android:layout_height="@dimen/square_size_expanded"
+        android:layout_marginBottom="16dp"
+        android:background="#990000" />
+
+    <View
+        android:id="@+id/square2"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="16dp"
+        android:layout_alignParentBottom="true"
+        android:background="#009900"
+        android:transitionName="@string/custom_element_transition_name"
+        tools:targetApi="lollipop" />
+
+    <View
+        android:id="@+id/square3"
+        android:layout_width="@dimen/square_size_expanded"
+        android:layout_height="@dimen/square_size_expanded"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="16dp"
+        android:background="#000099" />
+
+</RelativeLayout>

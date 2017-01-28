@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Source: https://github.com/alexjlockwood/adp-delightful-details -->
+<animated-vector
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:drawable="@drawable/vd_checkable_expandcollapse_expanded">
+
+    <target android:name="chevron">
+        <aapt:attr name="android:animation">
+            <objectAnimator
+                android:duration="250"
+                android:interpolator="@interpolator/fast_out_slow_in"
+                android:propertyName="translateY"
+                android:valueFrom="9"
+                android:valueTo="15"/>
+        </aapt:attr>
+    </target>
+
+    <target android:name="leftBar">
+        <aapt:attr name="android:animation">
+            <objectAnimator
+                android:duration="200"
+                android:interpolator="@interpolator/path"
+                android:propertyName="rotation"
+                android:valueFrom="135"
+                android:valueTo="45"
+                android:valueType="floatType"/>
+        </aapt:attr>
+    </target>
+
+    <target android:name="rightBar">
+        <aapt:attr name="android:animation">
+            <objectAnimator
+                android:duration="200"
+                android:interpolator="@interpolator/path"
+                android:propertyName="rotation"
+                android:valueFrom="45"
+                android:valueTo="135"
+                android:valueType="floatType"/>
+        </aapt:attr>
+    </target>
+
+</animated-vector>

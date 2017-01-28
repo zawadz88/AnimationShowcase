@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?><!-- Source: https://github.com/alexjlockwood/adp-delightful-details -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:enterFadeDuration="@android:integer/config_mediumAnimTime"
+    android:exitFadeDuration="@android:integer/config_mediumAnimTime">
+
+    <item android:id="@+id/expanded" android:state_checked="true">
+        <bitmap android:gravity="center" android:src="@drawable/abc_ic_star_black_48dp" />
+    </item>
+
+    <item android:id="@+id/collapsed">
+        <bitmap android:gravity="center" android:src="@drawable/abc_ic_star_black_16dp" />
+    </item>
+
+</selector>
