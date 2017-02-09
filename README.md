@@ -5,6 +5,7 @@ The following animations are supported:
 * View animations (`android.view.animation`)
 * Drawable animations (`animation-list`)
 * Window animations
+* View animators, view switchers, view flippers & text switchers
 * Object animators
 * View property animators
 * Layout animations

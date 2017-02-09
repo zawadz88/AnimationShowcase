@@ -35,6 +35,11 @@ public class MainActivity extends AbstractActivity {
         //overridePendingTransition(R.anim.slide_up_from_bottom, R.anim.slide_up_to_top);
     }
 
+    @OnClick(R.id.viewAnimators)
+    public void showViewAnimators() {
+        startActivity(new Intent(this, ViewAnimatorsActivity.class));
+    }
+
     @OnClick(R.id.objectAnimators)
     public void showObjectAnimators() {
         startActivity(new Intent(this, ObjectAnimatorActivity.class));

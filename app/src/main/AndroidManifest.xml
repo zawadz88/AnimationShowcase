@@ -24,6 +24,8 @@
 
         <activity android:name=".WindowAnimationsActivity" />
 
+        <activity android:name=".ViewAnimatorsActivity" />
+
         <activity android:name=".ObjectAnimatorActivity" />
 
         <activity android:name=".ViewPropertyAnimatorActivity" />
