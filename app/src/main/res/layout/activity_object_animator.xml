@@ -33,12 +33,29 @@
         android:layout_below="@id/rotation"
         android:text="Fade XML" />
 
+    <Button
+        android:id="@+id/customProperty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rotation"
+        android:layout_toRightOf="@id/fadeFromXML"
+        android:text="Custom property" />
+
     <android.support.v7.widget.AppCompatImageView
         android:id="@+id/icon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         app:srcCompat="@drawable/abc_ic_ab_back_material"
+        android:tint="@android:color/black"/>
+
+    <com.github.zawadz88.animation.showcase.widget.FancyImageView
+        android:id="@+id/fancyIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        app:srcCompat="@drawable/abc_ic_star_black_36dp"
         android:tint="@android:color/black"/>
 
 </RelativeLayout>

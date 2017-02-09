@@ -10,6 +10,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.animation.AccelerateDecelerateInterpolator;
 
+import com.github.zawadz88.animation.showcase.widget.FancyImageView;
+
 import butterknife.BindView;
 import butterknife.OnClick;
 
@@ -26,6 +28,9 @@ public class ObjectAnimatorActivity extends AbstractActivity {
 
     @BindView(R.id.icon)
     View icon;
+
+    @BindView(R.id.fancyIcon)
+    FancyImageView fancyIcon;
 
     private boolean animateForward = true;
 
@@ -87,6 +92,15 @@ public class ObjectAnimatorActivity extends AbstractActivity {
     public void onFadeFromXML() {
         Animator animator = AnimatorInflater.loadAnimator(this, animateForward ? R.animator.fade_out : R.animator.fade_in);
         animator.setTarget(icon);
+        animator.start();
+        animateForward = !animateForward;
+    }
+
+    @OnClick(R.id.customProperty)
+    public void onCustomProperty() {
+        ValueAnimator animator = ObjectAnimator.ofFloat(fancyIcon, "translationXY", fancyIcon.getTranslationXY(), animateForward ? -fancyIcon.getWidth() * 2 : 0.0f);
+        animator.setDuration(FULL_ANIMATION_DURATION);
+        animator.setInterpolator(new AccelerateDecelerateInterpolator());
         animator.start();
         animateForward = !animateForward;
     }
