@@ -41,7 +41,13 @@ public class ViewPropertyAnimatorActivity extends AbstractActivity {
         icon.animate()
                 .rotation(targetRotation)
                 .setDuration(FULL_ANIMATION_DURATION)
-                .setInterpolator(new AccelerateDecelerateInterpolator());
+                .setInterpolator(new AccelerateDecelerateInterpolator())
+                .withEndAction(new Runnable() {
+                    @Override
+                    public void run() {
+                        System.out.println("End action on thread: " + Thread.currentThread().getName());
+                    }
+                });
     }
 
     @OnClick(R.id.adaptive_rotation)

@@ -2,10 +2,12 @@ package com.github.zawadz88.animation.showcase;
 
 import android.os.Build;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.annotation.RequiresApi;
 import android.support.transition.ChangeBounds;
 import android.support.transition.Fade;
 import android.support.transition.Scene;
+import android.support.transition.Transition;
 import android.support.transition.TransitionManager;
 import android.support.transition.TransitionSet;
 import android.view.View;
@@ -163,6 +165,32 @@ public class SupportTransitionActivity extends AbstractActivity implements Radio
                     .addTransition(new ChangeBounds())
                     .addTransition(new Fade(Fade.OUT).addTarget(R.id.transition_square));
 
+                transitionSet.addListener(new Transition.TransitionListener() {
+                    @Override
+                    public void onTransitionStart(@NonNull Transition transition) {
+                        System.out.println("transition START");
+                    }
+
+                    @Override
+                    public void onTransitionEnd(@NonNull Transition transition) {
+                        System.out.println("transition END");
+                    }
+
+                    @Override
+                    public void onTransitionCancel(@NonNull Transition transition) {
+                        System.out.println("transition CANCEL");
+                    }
+
+                    @Override
+                    public void onTransitionPause(@NonNull Transition transition) {
+                        System.out.println("transition PAUSE");
+                    }
+
+                    @Override
+                    public void onTransitionResume(@NonNull Transition transition) {
+                        System.out.println("transition RESUME");
+                    }
+                });
                 TransitionManager.beginDelayedTransition(sceneRoot, transitionSet);
 
                 square.setVisibility(View.GONE);

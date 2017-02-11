@@ -2,6 +2,7 @@ package com.github.zawadz88.animation.showcase;
 
 import android.animation.Animator;
 import android.animation.AnimatorInflater;
+import android.animation.AnimatorListenerAdapter;
 import android.animation.AnimatorSet;
 import android.animation.ObjectAnimator;
 import android.animation.PropertyValuesHolder;
@@ -49,6 +50,27 @@ public class ObjectAnimatorActivity extends AbstractActivity {
         ValueAnimator animator = ObjectAnimator.ofFloat(icon, "rotation", icon.getRotation(), targetRotation);
         animator.setDuration(FULL_ANIMATION_DURATION);
         animator.setInterpolator(new AccelerateDecelerateInterpolator());
+        animator.addListener(new Animator.AnimatorListener() {
+            @Override
+            public void onAnimationStart(Animator animation) {
+                System.out.println("rotation START");
+            }
+
+            @Override
+            public void onAnimationEnd(Animator animation) {
+                System.out.println("rotation END");
+            }
+
+            @Override
+            public void onAnimationCancel(Animator animation) {
+                System.out.println("rotation CANCEL");
+            }
+
+            @Override
+            public void onAnimationRepeat(Animator animation) {
+                System.out.println("rotation REPEAT");
+            }
+        });
         animator.start();
     }
 
@@ -62,6 +84,12 @@ public class ObjectAnimatorActivity extends AbstractActivity {
         animatorSet.setDuration(FULL_ANIMATION_DURATION);
         animatorSet.setInterpolator(new AccelerateDecelerateInterpolator());
         animatorSet.playTogether(xAnimator, yAnimator, alphaAnimator);
+        animatorSet.addListener(new AnimatorListenerAdapter() {
+            @Override
+            public void onAnimationEnd(Animator animation) {
+                System.out.println("translateAndFade END");
+            }
+        });
         animatorSet.start();
 
         animateForward = !animateForward;

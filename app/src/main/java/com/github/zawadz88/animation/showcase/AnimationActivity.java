@@ -33,7 +33,41 @@ public class AnimationActivity extends AbstractActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_animation);
         basicRotationAnimation = AnimationUtils.loadAnimation(this, R.anim.rotation_basic);
+        basicRotationAnimation.setAnimationListener(new Animation.AnimationListener() {
+            @Override
+            public void onAnimationStart(Animation animation) {
+                System.out.println("basicRotationAnimation START");
+            }
+
+            @Override
+            public void onAnimationEnd(Animation animation) {
+                System.out.println("basicRotationAnimation END");
+
+            }
+
+            @Override
+            public void onAnimationRepeat(Animation animation) {
+                System.out.println("basicRotationAnimation REPEAT");
+            }
+        });
         inifiniteRotationAnimation = AnimationUtils.loadAnimation(this, R.anim.rotation_infinite);
+        inifiniteRotationAnimation.setAnimationListener(new Animation.AnimationListener() {
+            @Override
+            public void onAnimationStart(Animation animation) {
+                System.out.println("inifiniteRotationAnimation START");
+            }
+
+            @Override
+            public void onAnimationEnd(Animation animation) {
+                System.out.println("inifiniteRotationAnimation END");
+
+            }
+
+            @Override
+            public void onAnimationRepeat(Animation animation) {
+                System.out.println("inifiniteRotationAnimation REPEAT");
+            }
+        });
         fadeAndMoveAnimation = AnimationUtils.loadAnimation(this, R.anim.fade_and_move);
         scaleAnimation = AnimationUtils.loadAnimation(this, R.anim.scale);
     }
