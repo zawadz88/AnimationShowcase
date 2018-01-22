@@ -1,10 +1,10 @@
 package com.github.zawadz88.animation.showcase;
 
-import android.app.ActivityOptions;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.RequiresApi;
+import android.support.v4.app.ActivityOptionsCompat;
 
 import butterknife.OnClick;
 
@@ -28,6 +28,6 @@ public class ActivityTransitionActivity extends AbstractActivity {
     @OnClick(android.R.id.content)
     public void onClick() {
         startActivity(new Intent(this, ActivityTransitionTargetActivity.class),
-                ActivityOptions.makeSceneTransitionAnimation(this).toBundle());
+                ActivityOptionsCompat.makeSceneTransitionAnimation(this).toBundle());
     }
 }

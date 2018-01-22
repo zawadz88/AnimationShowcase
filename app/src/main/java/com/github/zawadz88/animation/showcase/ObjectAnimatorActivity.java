@@ -47,7 +47,7 @@ public class ObjectAnimatorActivity extends AbstractActivity {
                 ? 180.0f
                 : 0.0f;
         animateForward = !animateForward;
-        ValueAnimator animator = ObjectAnimator.ofFloat(icon, "rotation", icon.getRotation(), targetRotation);
+        ValueAnimator animator = ObjectAnimator.ofFloat(icon, View.ROTATION, icon.getRotation(), targetRotation);
         animator.setDuration(FULL_ANIMATION_DURATION);
         animator.setInterpolator(new AccelerateDecelerateInterpolator());
         animator.addListener(new Animator.AnimatorListener() {
