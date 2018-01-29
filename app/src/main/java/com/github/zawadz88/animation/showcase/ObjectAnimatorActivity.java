@@ -79,6 +79,7 @@ public class ObjectAnimatorActivity extends AbstractActivity {
         ValueAnimator xAnimator = ObjectAnimator.ofFloat(icon, "translationX", icon.getTranslationX(), animateForward ? icon.getWidth() * 2 : 0.0f);
         ValueAnimator yAnimator = ObjectAnimator.ofFloat(icon, "translationY", icon.getTranslationY(), animateForward ? icon.getHeight() * 4 : 0.0f);
         ValueAnimator alphaAnimator = ObjectAnimator.ofFloat(icon, "alpha", icon.getAlpha(), animateForward ? 0.0f : 1.0f);
+        //ValueAnimator alphaAnimator = ObjectAnimator.ofFloat(icon, View.ALPHA, icon.getAlpha(), animateForward ? 0.0f : 1.0f);
 
         AnimatorSet animatorSet = new AnimatorSet();
         animatorSet.setDuration(FULL_ANIMATION_DURATION);
@@ -127,6 +128,17 @@ public class ObjectAnimatorActivity extends AbstractActivity {
     @OnClick(R.id.customProperty)
     public void onCustomProperty() {
         ValueAnimator animator = ObjectAnimator.ofFloat(fancyIcon, "translationXY", fancyIcon.getTranslationXY(), animateForward ? -fancyIcon.getWidth() * 2 : 0.0f);
+        /*ValueAnimator animator = ObjectAnimator.ofFloat(fancyIcon, new Property<FancyImageView, Float>(Float.class, "translationXY") {
+            @Override
+            public Float get(FancyImageView object) {
+                return object.getTranslationXY();
+            }
+
+            @Override
+            public void set(FancyImageView object, Float value) {
+                object.setTranslationXY(value);
+            }
+        }, fancyIcon.getTranslationXY(), animateForward ? -fancyIcon.getWidth() * 2 : 0.0f);*/
         animator.setDuration(FULL_ANIMATION_DURATION);
         animator.setInterpolator(new AccelerateDecelerateInterpolator());
         animator.start();

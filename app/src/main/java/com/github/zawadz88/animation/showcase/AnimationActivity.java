@@ -74,11 +74,13 @@ public class AnimationActivity extends AbstractActivity {
 
     @OnClick(R.id.single_rotation)
     public void onSingleRotation() {
+        basicRotationAnimation.cancel();
         starIcon.startAnimation(basicRotationAnimation);
     }
 
     @OnClick(R.id.infinite_rotation)
     public void onInfiniteRotation() {
+        inifiniteRotationAnimation.cancel();
         starIcon.startAnimation(inifiniteRotationAnimation);
     }
 
