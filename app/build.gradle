@@ -22,11 +22,11 @@ android {
 }
 
 dependencies {
-    compile 'com.android.support:appcompat-v7:27.0.2'
-    compile 'com.android.support:recyclerview-v7:27.0.2'
-    compile 'com.android.support:transition:27.0.2'
+    implementation 'com.android.support:appcompat-v7:27.0.2'
+    implementation 'com.android.support:recyclerview-v7:27.0.2'
+    implementation 'com.android.support:transition:27.0.2'
 
-    compile("com.jakewharton:butterknife:8.4.0")
+    implementation("com.jakewharton:butterknife:8.4.0")
     annotationProcessor ("com.jakewharton:butterknife-compiler:8.4.0")
 
 }

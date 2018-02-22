@@ -122,6 +122,17 @@
             android:text="Support transitions" />
 
         <Button
+            android:id="@+id/customTransitions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Custom transitions" />
+
+        <Button
             android:id="@+id/activityTransitions"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

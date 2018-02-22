@@ -75,6 +75,15 @@ public class MainActivity extends AbstractActivity {
         startActivity(new Intent(this, SupportTransitionActivity.class));
     }
 
+    @OnClick(R.id.customTransitions)
+    public void showCustomTransitions() {
+        if (isLollipopOrAbove()) {
+            startActivity(new Intent(this, CustomTransitionActivity.class));
+        } else {
+            showUnsupportedAPIError(Build.VERSION_CODES.LOLLIPOP);
+        }
+    }
+
     @TargetApi(Build.VERSION_CODES.LOLLIPOP)
     @OnClick(R.id.activityTransitions)
     public void showActivityTransitions() {

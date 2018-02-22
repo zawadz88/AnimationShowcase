@@ -38,6 +38,8 @@
 
         <activity android:name=".SupportTransitionActivity" />
 
+        <activity android:name=".CustomTransitionActivity" />
+
         <activity
             android:name=".ActivityTransitionActivity"
             android:theme="@style/AppTheme.ActivityTransitions.Source" />
